@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classroom – LearnHub</title>
+  <meta name="description" content="Watch lessons and track your progress in the LearnHub interactive classroom." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Remove body bottom padding for full-screen classroom feel */
+    body { overflow: hidden; }
+    main { overflow: hidden; }
+    .classroom-layout { height: calc(100vh - 72px); }
+    @media (max-width: 992px) {
+      body { overflow: auto; }
+      main { overflow: auto; }
+      .classroom-layout { height: auto; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Minimal Classroom Navbar -->
+  <nav class="navbar" style="position:fixed;top:0;left:0;right:0;z-index:1000;">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon"><i class="fa-solid fa-rocket"></i></div>
+        <span>Learn<span class="accent">Hub</span></span>
+      </a>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <a href="dashboard.html" class="btn btn-sm btn-outline-primary">
+          <i class="fa-solid fa-arrow-left"></i> My Dashboard
+        </a>
+        <div id="nav-auth-container">
+          <div class="spinner" style="border-color:rgba(37,99,235,0.2);border-top-color:var(--primary);"></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main style="padding-top:72px;">
+    <!-- All classroom content rendered by lesson.js -->
+    <div id="classroom-root">
+      <div style="text-align:center;padding:8rem 0;background:#0f172a;min-height:calc(100vh - 72px);color:#fff;">
+        <div class="spinner" style="border-color:rgba(255,255,255,0.2);border-top-color:#fff;width:48px;height:48px;border-width:3px;"></div>
+        <p style="margin-top:1.5rem;color:#94a3b8;">Preparing your classroom...</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script src="js/lesson.js"></script>
+</body>
+</html>

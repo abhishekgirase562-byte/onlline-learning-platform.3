@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Console – LearnHub</title>
+  <meta name="description" content="LearnHub administrator console for managing courses, students, and enrollments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon"><i class="fa-solid fa-rocket"></i></div>
+        <span>Learn<span class="accent">Hub</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="admin.html" class="nav-link active">Admin Console</a></li>
+      </ul>
+      <div id="nav-auth-container">
+        <div class="spinner" style="border-color:rgba(37,99,235,0.2);border-top-color:var(--primary);"></div>
+      </div>
+      <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- All admin content rendered by admin.js -->
+    <div id="admin-root">
+      <div style="text-align:center;padding:8rem 0;">
+        <div class="spinner spinner-primary"></div>
+        <p style="margin-top:1rem;color:var(--text-muted);">Loading admin console...</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

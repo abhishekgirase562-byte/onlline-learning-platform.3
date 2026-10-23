@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnHub – Online Learning Platform | Upskill with Expert Instructors</title>
+  <meta name="description" content="LearnHub offers expert-led online courses in Web Development, Data Science, UI/UX Design, DevOps, and more. Start learning today for free." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon"><i class="fa-solid fa-rocket"></i></div>
+        <span>Learn<span class="accent">Hub</span></span>
+      </a>
+
+      <ul class="nav-links" id="main-nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="courses.html" class="nav-link">Courses</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-auth" id="nav-auth-container">
+        <!-- Injected by main.js -->
+        <div class="spinner" style="border-color:rgba(37,99,235,0.2);border-top-color:var(--primary);"></div>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <!-- Left Content -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-bolt"></i>
+            Trusted by 50,000+ learners worldwide
+          </div>
+
+          <h1 class="hero-title">
+            Unlock Your <span class="highlight">Full Potential</span> with Expert Courses
+          </h1>
+
+          <p class="hero-description">
+            Join LearnHub and accelerate your career with industry-leading courses in Web Development, Data Science, Design, Cybersecurity and more — all taught by real experts.
+          </p>
+
+          <div class="hero-actions">
+            <a href="courses.html" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-compass"></i> Explore All Courses
+            </a>
+            <a href="register.html" class="btn btn-outline btn-lg">
+              Get Started Free <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">50K+</div>
+              <div class="stat-label">Active Students</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">200+</div>
+              <div class="stat-label">Expert Courses</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">98%</div>
+              <div class="stat-label">Satisfaction Rate</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual -->
+        <div class="hero-visual">
+          <div class="floating-badge badge-top">
+            <div class="badge-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div>
+              <h5>Skills Accelerating</h5>
+              <p>Join 50K+ growing learners</p>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&q=80" alt="Students learning online" />
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <div class="badge-icon"><i class="fa-solid fa-certificate"></i></div>
+            <div>
+              <h5>Certificate Ready</h5>
+              <p>Industry-recognized credentials</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Categories Section -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Learn by Subject</div>
+          <h2 class="section-title">Browse Top Categories</h2>
+          <p class="section-subtitle">Discover courses across the most in-demand skills and fast-growing industries of 2026.</p>
+        </div>
+
+        <div class="categories-grid">
+          <a href="courses.html?category=Web+Development" class="category-card" style="text-decoration:none;color:inherit;">
+            <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="category-info">
+              <h4>Web Development</h4>
+              <p>HTML, CSS, JS, Flask, React & more</p>
+            </div>
+          </a>
+          <a href="courses.html?category=Data+Science" class="category-card" style="text-decoration:none;color:inherit;">
+            <div class="category-icon" style="background:var(--secondary-light);color:var(--secondary);"><i class="fa-solid fa-chart-bar"></i></div>
+            <div class="category-info">
+              <h4>Data Science</h4>
+              <p>Python, ML, Pandas, NumPy</p>
+            </div>
+          </a>
+          <a href="courses.html?category=UI%2FUX+Design" class="category-card" style="text-decoration:none;color:inherit;">
+            <div class="category-icon" style="background:var(--accent-light);color:var(--accent);"><i class="fa-solid fa-pen-ruler"></i></div>
+            <div class="category-info">
+              <h4>UI/UX Design</h4>
+              <p>Figma, Design Systems, Prototyping</p>
+            </div>
+          </a>
+          <a href="courses.html?category=Cloud+%26+DevOps" class="category-card" style="text-decoration:none;color:inherit;">
+            <div class="category-icon" style="background:var(--success-light);color:var(--success);"><i class="fa-brands fa-docker"></i></div>
+            <div class="category-info">
+              <h4>Cloud & DevOps</h4>
+              <p>Docker, Kubernetes, CI/CD</p>
+            </div>
+          </a>
+          <a href="courses.html?category=Cybersecurity" class="category-card" style="text-decoration:none;color:inherit;">
+            <div class="category-icon" style="background:var(--danger-light);color:var(--danger);"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="category-info">
+              <h4>Cybersecurity</h4>
+              <p>Ethical Hacking, OWASP, Networking</p>
+            </div>
+          </a>
+          <a href="courses.html?category=Mobile+Development" class="category-card" style="text-decoration:none;color:inherit;">
+            <div class="category-icon" style="background:var(--warning-light);color:var(--warning);"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div class="category-info">
+              <h4>Mobile Development</h4>
+              <p>Flutter, Dart, iOS & Android</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Top-Rated Courses</div>
+          <h2 class="section-title">Featured Learning Paths</h2>
+          <p class="section-subtitle">Hand-picked by our instructors and loved by thousands of students globally.</p>
+        </div>
+
+        <div class="courses-grid" id="featured-courses-grid">
+          <!-- Loaded by courses.js -->
+          <div style="grid-column:1/-1;text-align:center;padding:3rem;">
+            <div class="spinner spinner-primary"></div>
+          </div>
+        </div>
+
+        <div style="text-align:center;margin-top:3rem;">
+          <a href="courses.html" class="btn btn-outline-primary btn-lg">
+            <i class="fa-solid fa-grid-2"></i> View All Courses
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why LearnHub Features Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Why Choose LearnHub</div>
+          <h2 class="section-title">Built for Serious Learners</h2>
+          <p class="section-subtitle">Everything you need to successfully transform your skills and career trajectory.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon-box icon-blue"><i class="fa-solid fa-brain"></i></div>
+            <h4>Expert-Led Instruction</h4>
+            <p>Learn from experienced practitioners and researchers who work at leading technology companies.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon-box icon-purple"><i class="fa-solid fa-video"></i></div>
+            <h4>HD Video Content</h4>
+            <p>Crystal-clear video lessons accessible on any device with offline download capabilities.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon-box icon-cyan"><i class="fa-solid fa-chart-line"></i></div>
+            <h4>Track Your Progress</h4>
+            <p>Monitor your learning journey with detailed progress dashboards and completion milestones.</p>
+          </div>
+          <div class="feature-box">
+            <div class="feature-icon-box icon-green"><i class="fa-solid fa-certificate"></i></div>
+            <h4>Industry Certificates</h4>
+            <p>Earn recognized certificates upon completion to boost your resume and LinkedIn profile.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Student Stories</div>
+          <h2 class="section-title">What Our Learners Say</h2>
+          <p class="section-subtitle">Thousands of students have transformed their careers through LearnHub.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="test-text">"LearnHub completely transformed my career trajectory. Within 3 months of completing the Full-Stack Web Development course, I landed my first developer role with a 40% salary increase!"</p>
+            <div class="test-user">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Alex Morgan" class="test-avatar" />
+              <div class="test-info">
+                <h5>Alex Morgan</h5>
+                <p>Junior Developer at TechFlow Inc.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="test-text">"The Data Science course was incredibly well-structured. The instructors explain complex machine learning concepts so clearly that even a total beginner like me could follow along and build real projects."</p>
+            <div class="test-user">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Priya Sharma" class="test-avatar" />
+              <div class="test-info">
+                <h5>Dr. Priya Sharma</h5>
+                <p>Data Analyst at DataVision Analytics</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="test-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <p class="test-text">"The UI/UX Design Masterclass is absolutely top-notch. I went from knowing nothing about Figma to building complete design systems. Best investment I have made in my career development."</p>
+            <div class="test-user">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Sarah Kim" class="test-avatar" />
+              <div class="test-info">
+                <h5>Sarah Kim</h5>
+                <p>UX Designer at Creative Studio Co.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); padding: 5rem 0;" id="contact">
+      <div class="container" style="text-align:center;color:#fff;">
+        <h2 style="color:#fff;font-size:2.5rem;margin-bottom:1rem;">Ready to Start Learning?</h2>
+        <p style="color:rgba(255,255,255,0.8);font-size:1.1rem;max-width:540px;margin:0 auto 2rem;">Join 50,000+ learners who are already transforming their careers with LearnHub.</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+          <a href="register.html" class="btn btn-lg" style="background:#fff;color:var(--primary);font-weight:700;">
+            <i class="fa-solid fa-rocket"></i> Create Free Account
+          </a>
+          <a href="courses.html" class="btn btn-lg" style="background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.4);">
+            Browse Courses
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" style="color:#fff;">
+            <div class="logo-icon"><i class="fa-solid fa-rocket"></i></div>
+            <span>Learn<span style="background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Hub</span></span>
+          </a>
+          <p>Empowering learners worldwide with cutting-edge, expert-crafted online courses and career-ready skills.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html">Browse Courses</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="dashboard.html">Student Dashboard</a></li>
+            <li><a href="login.html">Sign In</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html?category=Web+Development">Web Development</a></li>
+            <li><a href="courses.html?category=Data+Science">Data Science</a></li>
+            <li><a href="courses.html?category=UI%2FUX+Design">UI/UX Design</a></li>
+            <li><a href="courses.html?category=Cybersecurity">Cybersecurity</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 LearnHub. All rights reserved.</p>
+        <p>Built with <i class="fa-solid fa-heart" style="color:var(--danger);"></i> using Flask & MongoDB</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>

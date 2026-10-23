@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Details – LearnHub</title>
+  <meta name="description" content="View full course details, curriculum, instructor info, and enroll at LearnHub." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon"><i class="fa-solid fa-rocket"></i></div>
+        <span>Learn<span class="accent">Hub</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-auth" id="nav-auth-container">
+        <div class="spinner" style="border-color:rgba(37,99,235,0.2);border-top-color:var(--primary);"></div>
+      </div>
+      <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Breadcrumb -->
+    <div style="background:#fff;border-bottom:1px solid var(--border);padding:0.75rem 0;">
+      <div class="container" style="font-size:0.85rem;color:var(--text-muted);">
+        <a href="index.html" style="color:var(--text-muted);">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:0.65rem;margin:0 0.5rem;"></i>
+        <a href="courses.html" style="color:var(--text-muted);">Courses</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:0.65rem;margin:0 0.5rem;"></i>
+        <span style="color:var(--text-main);font-weight:500;">Course Details</span>
+      </div>
+    </div>
+
+    <!-- All course detail content rendered by JS -->
+    <div id="course-details-root"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" style="color:#fff;">
+            <div class="logo-icon"><i class="fa-solid fa-rocket"></i></div>
+            <span>Learn<span style="background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Hub</span></span>
+          </a>
+          <p>Empowering learners worldwide with expert-crafted courses.</p>
+        </div>
+        <div class="footer-col"><h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html">Browse Courses</a></li>
+            <li><a href="register.html">Create Account</a></li>
+          </ul>
+        </div>
+        <div class="footer-col"><h4>Support</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LearnHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>

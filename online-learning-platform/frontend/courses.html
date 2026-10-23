@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Courses – LearnHub | Browse & Filter Expert Courses</title>
+  <meta name="description" content="Browse LearnHub's full catalog of expert-led courses. Filter by category, difficulty, and sort by rating. Start learning today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon"><i class="fa-solid fa-rocket"></i></div>
+        <span>Learn<span class="accent">Hub</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="courses.html" class="nav-link active">Courses</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-auth" id="nav-auth-container">
+        <div class="spinner" style="border-color:rgba(37,99,235,0.2);border-top-color:var(--primary);"></div>
+      </div>
+      <button class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Page Header Banner -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Explore All Courses</h1>
+        <p>Discover expert-led courses across the most in-demand technology skills and creative disciplines.</p>
+      </div>
+    </div>
+
+    <section class="section" style="padding-top: 2rem;">
+      <div class="container">
+        <!-- Search & Filter Bar -->
+        <div class="catalog-filter-bar">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="catalog-search" class="search-input" placeholder="Search courses by title, category, or instructor..." />
+          </div>
+
+          <div class="filter-selects">
+            <select id="filter-difficulty" class="select-control">
+              <option value="all">All Levels</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+              <option value="All Levels">Mixed Levels</option>
+            </select>
+
+            <select id="filter-sort" class="select-control">
+              <option value="featured">Featured First</option>
+              <option value="highest_rated">Highest Rated</option>
+              <option value="newest">Newest</option>
+              <option value="price_low">Price: Low to High</option>
+              <option value="price_high">Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Pills Filter -->
+        <div class="category-pills">
+          <button class="pill-btn active" data-category="all">All Categories</button>
+          <button class="pill-btn" data-category="Web Development">
+            <i class="fa-solid fa-code"></i> Web Dev
+          </button>
+          <button class="pill-btn" data-category="Data Science">
+            <i class="fa-solid fa-chart-bar"></i> Data Science
+          </button>
+          <button class="pill-btn" data-category="UI/UX Design">
+            <i class="fa-solid fa-pen-ruler"></i> UI/UX Design
+          </button>
+          <button class="pill-btn" data-category="Cloud & DevOps">
+            <i class="fa-brands fa-docker"></i> DevOps
+          </button>
+          <button class="pill-btn" data-category="Cybersecurity">
+            <i class="fa-solid fa-shield-halved"></i> Cybersecurity
+          </button>
+          <button class="pill-btn" data-category="Mobile Development">
+            <i class="fa-solid fa-mobile-screen"></i> Mobile Dev
+          </button>
+        </div>
+
+        <!-- Results Count -->
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;">
+          <p id="results-count" style="color:var(--text-muted);font-size:0.95rem;font-weight:500;">Loading courses...</p>
+        </div>
+
+        <!-- Courses Grid -->
+        <div class="courses-grid" id="courses-catalog-grid">
+          <div style="grid-column:1/-1;text-align:center;padding:4rem;">
+            <div class="spinner spinner-primary"></div>
+            <p style="margin-top:1rem;color:var(--text-muted);">Loading your learning catalog...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="brand-logo" style="color:#fff;">
+            <div class="logo-icon"><i class="fa-solid fa-rocket"></i></div>
+            <span>Learn<span style="background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Hub</span></span>
+          </a>
+          <p>Empowering learners worldwide with expert-crafted courses and career-ready skills.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Platform</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html">Browse Courses</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="dashboard.html">My Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="footer-col"><h4>Categories</h4>
+          <ul class="footer-links">
+            <li><a href="courses.html?category=Web+Development">Web Development</a></li>
+            <li><a href="courses.html?category=Data+Science">Data Science</a></li>
+            <li><a href="courses.html?category=UI%2FUX+Design">UI/UX Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-col"><h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 LearnHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast-container"></div>
+  <script src="js/main.js"></script>
+  <script src="js/courses.js"></script>
+</body>
+</html>
